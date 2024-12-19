@@ -3,11 +3,12 @@
 #include <unistd.h>
 
 int main(const char argc int *argv[]){
-
-int main(const char
-if (fd == -1)
-
-else
+  int fd1, fd2;
+  fd1 = open(argv[1], );
+  fd2 = open(argv[2], );
+  if (fd1 == -1 || fd2 == -1){
+  
+  }else{
   
   }
 

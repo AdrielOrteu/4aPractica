@@ -31,5 +31,7 @@ int main( int argc, char *argv[] ){
       read(fd2, &file2_ch, 1);
     }
     printf("%s %s differ: byte %d, line %d\n", argv[1], argv[2], byte_num, line_num);
+    close(fd1);
+    close(fd2);
   }
 }

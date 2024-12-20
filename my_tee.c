@@ -46,6 +46,7 @@ int main (int argc, char *argv[]) {
   else {
     char buffer;
 //    char sentence [];
+// STD_FILENO es igual a 0, q es el fd del stdIn
     while (read(STDIN_FILENO, &buffer, 1) > 0) {
       if (write(fd, &buffer, 1) == -1) {
         perror("Error al escribir");

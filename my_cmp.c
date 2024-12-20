@@ -2,9 +2,6 @@
 #include <unistd.h>
 #include <stdio.h>
 
-#define TRUE 1
-#define FALSE 0
-
 int main( int argc, char *argv[] ){
   int fd1, fd2;
   fd1 = open(argv[1], O_RDONLY);
